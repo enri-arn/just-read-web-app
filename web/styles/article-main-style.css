@@ -1,0 +1,28 @@
+/* 
+    Created on : 9-gen-2018, 7.55.29
+    Author     : User
+*/
+
+.article{
+    margin-top: 3.55em;
+    margin-right: 1em;
+    float: right;
+    width: 77%;
+    background-size: cover;
+}
+
+.article-exp{
+    margin-top: 3.55em;
+    margin-right: 1em;
+    float: right;
+    width: 96%; 
+}
+
+@media only screen and (max-width: 1000px){
+    .article{
+        width: 96%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+

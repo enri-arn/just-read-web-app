@@ -1,0 +1,94 @@
+/* 
+    Created on : 8-gen-2018, 16.39.29
+    Author     : Arnaudo Enrico, Giraudo Paolo, Impeduglia Alessia
+*/
+
+@font-face {
+    font-family: main_font;
+    src: url(../fonts/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: link_font;
+    src: url(../fonts/JosefinSans-Light.ttf);
+}
+
+.navigation-drawer{
+    margin-top: 3.6em;
+    width: 14em;
+    height: 90%;
+    float: left;
+    position: fixed;
+
+    /*border: 2px solid blue;*/
+}
+
+.navigation-drawer:hover{
+    overflow-x: auto;
+}
+
+.drawer-title{
+    font-size: 16px;
+    font-family: logo_font;
+    margin-left: 1em;
+    margin-bottom: 0.3em;;
+    margin-top: 0.8em;
+}
+
+.horizontal-separator{
+    background-color: #ababab;
+    width: 12.4em;
+    height: 0.05em;
+    margin-left: 0.5em;
+}
+
+.drawer-link{
+    list-style-type: none;
+    margin-top: 0.1em;
+    text-align: left;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.drawer-text-link{
+    width: 90%;
+    height: 1.8em;
+    margin-right: 1em;
+    padding: 5px;
+    font-family: main_font;
+    cursor: pointer;
+}
+
+.drawer-text-link:hover{
+    background-color: rgba(0,0,0, 0.1);
+}
+
+.material-icons{
+    float: left;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 1em;
+    margin-top: -2px;
+    
+    /*border: 2px solid green;*/
+}
+
+.link{
+    color: black;
+    width: 10em;
+    font-size: 16px;
+    display: block;
+    font-family: link_font;
+    vertical-align: middle;
+    text-height: auto;
+    
+    /*border: 2px solid red;*/
+}
+
+@media only screen and (max-width: 1000px){
+    #navigation-drawer{
+        background-color: white;
+    }
+}
+

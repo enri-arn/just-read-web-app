@@ -1,0 +1,161 @@
+/* 
+    Created on : 4-gen-2018, 15.07.49
+    Author     : User
+*/
+
+@font-face {
+    font-family: main_font;
+    src: url(../fonts/JosefinSans-Light.ttf);
+}
+
+body{
+    font-family: main_font;
+    margin: 0;
+    background-color: #efefef;
+}
+
+form{
+    margin-top: -15px;
+}
+
+.group        { 
+    position:relative;
+    margin-bottom: 24px;
+}
+input {
+    font-size:14px;
+    padding:2px 2px 2px 2px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #F44336;
+}
+input:focus{ 
+    outline:none; 
+}
+
+label{
+    width: 60%;
+    height: 2.4em;
+    margin-left: 18%;
+    margin-right: 18%;
+    vertical-align: middle;
+    color:#999;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:8px;
+    transition:0.2s ease all; 
+}
+
+input:focus ~ label, input:valid ~ label     {
+    top:-20px;
+    font-size:14px;
+    color:#F44336;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+.input_login{
+    width: 60%;
+    height: 2.4em;
+    margin-left: 18%;
+    margin-right: 18%;
+    vertical-align: middle;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #F44336;
+}
+
+.input_login_btn{
+    color: white;
+    text-transform: uppercase;
+    width: 50%;
+    height: 2.4em;
+    margin-top: 5%;
+    margin-left: 23%;
+    margin-right: 23%;
+    vertical-align: middle;
+    border: none;
+    background-color: #F44336;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.register-box{
+    width: 25em;
+    height: 39.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.center-box-title{
+    width: 80%;
+    height: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    padding-bottom: 0;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.center-text{
+    width: 80%;
+    height: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    padding-bottom: 0;
+    margin-top: -5px;
+    text-align: center;
+}
+
+.home-link{
+    text-decoration: none;
+    color: #ffa000;
+    text-decoration: underline;
+}
+
+.home-link:hover{
+    color: #FF6F00;
+}
+
+.input_login_btn:hover{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.12);
+    background-color: #bf3f35;
+}
+
+.info-pwd-box{
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    width: 25em;
+    font-family: main_font;
+    background-color: #424242;
+    color: white;
+    z-index: 50;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.little-text{
+    font-size: 8px;
+}
+
+.pwd-title{
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .register-box{
+        width: 95%;
+    }
+    .info-pwd-box{
+        width: 95%;
+    }
+}

@@ -1,0 +1,176 @@
+/* 
+    Created on : 9-gen-2018, 10.50.01
+    Author     : Arnaudo Enrico, Giraudo Paolo, Impeduglia Alessia 
+*/
+
+@font-face {
+    font-family: title_book;
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: title_category;
+    src: url(../fonts/JosefinSans-Light.ttf);
+}
+
+.category-list{
+    list-style-type: none;
+    padding: 5px;
+    text-decoration: none;
+
+    /*border: 2px solid gold;*/
+}
+
+.category-container{
+    background-color: white;
+    width: 99%;
+    height: 16.5em;
+    margin-top: 0.4em;
+    margin-bottom: 0.6em;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.category-title{
+    font-size: 22px;
+    font-family: title_category;
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px;
+    cursor: pointer;
+    height: 1.2em;
+
+    /*border: 2px solid blueviolet;*/
+}
+
+.category-title:hover{
+    color: #F44336;
+}
+
+.show-more{
+    right: 0;
+    margin-right: 5%;
+    position: absolute;
+    font-size: 10px;
+}
+
+.down-arrow{
+    width: 1.8em;
+    height: 1.8em;
+    margin-top: 0.4em;
+}
+
+#category-name{
+    width: 50%;
+    float: left;
+    margin-left: 20%;
+    font-size: 24px;
+    
+    /*border: 2px solid blue;*/
+}
+
+.icon-genre{
+    float: left;
+    font-size: 10px;
+    width: 2em;
+    height: 2em;
+    margin-left: 1.2em;
+    margin-top: 0.2em;
+}
+
+.divider{
+    background-color: #ababab;
+    width: 95%;
+    height: 1.2px;
+    margin-left: 1.24em;
+    margin-right: 1.24em;
+}
+
+.book-container{
+    width: 95%;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    height: 12.8em;
+    overflow: hidden;
+    cursor: pointer;
+
+    /*border: 2px solid red;*/
+}
+
+.book-item{
+    height: 99%;
+    width: 6em;
+    float: left;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+
+    /*border: 2px solid gold;*/
+}
+
+.book-item:hover{
+    text-decoration: underline;
+}
+
+.cover-book{
+    width: 7em;
+    height: 9.8em;
+    background-size: cover;
+}
+
+.cover-book:hover{
+    opacity: 0.6;
+}
+
+.title-book{
+    margin-top: 0.1em;
+    height: 2.5em;
+    font-family: title_book;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 1200px){
+    .book-container{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    .divider{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    .book-item{
+        height: 98%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    article{
+        width: 95%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .book-container{
+        width: 0%;
+        visibility: hidden;
+    }
+    .category-container{
+        height: 5em;
+    }
+    .divider{
+        visibility: hidden;
+    }
+    .category-title{
+        padding: 20px;
+    }
+    article{
+        width: 95%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+

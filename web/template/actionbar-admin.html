@@ -1,0 +1,23 @@
+<header id="main-actionbar" class="main-actionbar" style='background-color: #00E676;'>
+    <div id="menu-navigation-drawer" class="hbox-item">
+        <img id="menu-icon" class="menu-icon" src="../icons/menu.svg" alt="menu" title="Open menu" draggable="false">
+    </div>
+    <div id="title-website" class="hbox-item">
+        <a href="/JustRead/app/admin"><h1 id="title" class="title-website" title="Just Read">Just Read</h1></a>
+    </div>
+    <div id="searchbar-box" class="hbox-item-search">
+        <input id="search-input-active" class="search-input" type="text" name="search" placeholder="Search an active borrowing" style='display: none'>
+        <img id="search-icon-active" class="search-icon" src="../icons/search.svg" alt="search icon" title="Click to search" draggable="false" style='display: none'>
+        <input id="search-input-expired" class="search-input" type="text" name="search" placeholder="Search an expired borrowing" style='display: none'>
+        <img id="search-icon-expired" class="search-icon" src="../icons/search.svg" alt="search icon" title="Click to search" draggable="false" style='display: none'>
+        <input id="search-input-archived" class="search-input" type="text" name="search" placeholder="Search an archived borrowing" style='display: none'>
+        <img id="search-icon-archived" class="search-icon" src="../icons/search.svg" alt="search icon" title="Click to search" draggable="false" style='display: none'>
+        <input id="search-input-user" class="search-input" type="text" name="search" placeholder="Search a user" style='display: none'>
+        <img id="search-icon-user" class="search-icon" src="../icons/search.svg" alt="search icon" title="Click to search" draggable="false" style='display: none'>
+        <input id="search-input-books" class="search-input" type="text" name="search" placeholder="Search a book" style='display: none'>
+        <img id="search-icon-books" class="search-icon" src="../icons/search.svg" alt="search icon" title="Click to search" draggable="false" style='display: none'>
+    </div>
+    <div id="user-link-box" class="hbox-item-r">
+        <a id="user-link" class="login-link" href="<%=request.getContextPath()%>/app/catalog"><b>User mode</b></a>
+    </div>
+</header>

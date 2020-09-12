@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+    <context-param>
+        <description>url del database per accesso da applicazione java</description>
+        <param-name>db-url</param-name>
+        <param-value>jdbc:mysql://localhost:3306/library</param-value>
+    </context-param>
+    <context-param>
+        <description>account per accedere a DB</description>
+        <param-name>user</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <description>password di accesso a DB</description>
+        <param-name>pwd</param-name>
+        <param-value></param-value>
+    </context-param>
+    <session-config>
+        <session-timeout>   
+            30
+        </session-timeout>
+    </session-config>
+    <listener>
+	<listener-class>
+            controller.DriverInitializer
+        </listener-class>
+   </listener>
+
+</web-app>

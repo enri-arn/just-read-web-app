@@ -1,0 +1,232 @@
+/* 
+    Created on : 30-gen-2018, 13.42.49
+    Author     : Arnaudo Enrico, Giraudo Paolo, Impeduglia Alessia
+*/
+
+@font-face {
+    font-family: logo_font;
+    src: url(../fonts/JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: nb;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+.card{
+    height: 24em;
+
+    /*border: 2px solid blue;*/
+}
+
+.small{
+    height: 1em;
+    width: 1em;
+}
+
+.small-fab{
+    height: 1em;
+    width: 1em;
+}
+
+.library-image{
+    width: 24em;;
+    height: 24em;
+    float: left;
+    margin-right: 2em;
+
+    /*border: 2px solid red;*/
+}
+
+.calendar{
+    border-collapse: collapse;
+    width: 96%;
+    margin-top: 1em;
+    margin-left: 1em;
+
+    /*border: 2px solid red;*/
+}
+
+.personal-td{
+    text-align: left;
+    padding: 8px;
+    color: #F44336;
+    font-size: 18px;
+    font-family: logo_font;
+}
+
+.personal-tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+.personal-th{
+    text-align: left;
+    padding: 8px;
+    width: 60%;
+}
+
+.title-contacts{
+    font-size: 22px;
+    width: 98%;
+    text-align: center;
+    padding-top: 1em;
+    padding-left: 0.8em;
+    margin-bottom: 0;
+    padding-bottom: 0.2em;
+    font-family: logo_font;
+}
+
+.map{
+    width:25em;
+    height:20em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    float:left;
+    background-color:red;
+}
+
+.table-info{
+    font-family: logo_font;
+    width: 50%;
+
+    /*border: 2px solid brown;*/
+}
+
+.tr-info{
+    padding-bottom: 1.4em;
+    padding-top: 1em;
+    margin-left: 1em;
+
+    /*border: 1px solid violet;*/
+}
+
+.red{
+    color: #F44336;
+    margin-left: 1em;
+    text-align: left;
+}
+
+.question{
+    font-family: logo_font;
+    color: #F44336;
+    margin-left: 1em;
+}
+
+.answer{
+    margin-left: 1em;
+    padding: 1em;
+    font-family: roboto_font;
+}
+
+.nb{
+    font-family: nb;
+    padding-top: 0.2em;
+}
+
+.intro{
+    width: 26em;
+    height: 22em;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.left{
+    width: 50%;
+    float: left;
+}
+
+.right{
+    width: 50%;
+    float: right;
+}
+
+.center{
+    width: 96%;
+    text-align: center;
+
+    /*border: 1px solid red;*/
+}
+
+.user-profile-image{
+    max-width: 20em;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.4em;
+
+    /*border: 2px solid red;*/
+}
+
+.name-surname{
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.user-email{
+    width: 100%;
+    text-align: center;
+    margin-top: 1.4em;
+}
+
+.info-extra{
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+.modify-profile{
+    cursor: pointer;
+    border: none;
+    font-family: title_font;
+    font-size: 20px;
+    background-color: #ffc107;
+    color: white;
+    padding: 5px;
+    margin-top: -3em;
+    float: right;
+    margin-right: 1em;
+    z-index: 30;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.14);
+}
+
+.modify-profile:hover{
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1.5px 5px 0 rgba(0, 0, 0, 0.1);
+    background-color: #F44336;
+}
+
+.input-name{
+    width: 36%;
+    height: 2.4em;
+    margin-left: 30%;
+    margin-right: 30%;
+    vertical-align: middle;
+    margin-top: 1em;
+    margin-bottom: 1.6em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #F44336;
+}
+
+.input-image{
+    vertical-align: middle;
+    margin-top: 2em;
+    margin-bottom: 1.4em;
+    border: none;
+    background: none;
+    margin-left: 30%;
+    width: 36%;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1000px){
+    .map{
+        display: none;
+    }
+}

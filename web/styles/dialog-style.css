@@ -1,0 +1,92 @@
+/* 
+    Created on : 16-gen-2018, 16.36.29
+    Author     : Arnaudo Enrico, Giraudo Paolo, Impeduglia Alessia
+*/
+
+@font-face {
+    font-family: logo_font;
+    src: url(../fonts/JosefinSans-Light.ttf);
+}
+
+.dialog-box{
+    font-family: logo_font;
+    background-color: #424242;
+    color: white;
+    width: 16em;
+    height: 9em;
+    position: fixed;
+    margin-top: 8.6em;
+    margin-left: 22.6em;
+    z-index: 50;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    /*border: 1px solid red;*/
+}
+
+.snakbar-box{
+    font-family: logo_font;
+    background-color: #424242;
+    width: 30em;
+    max-width: 40em;
+    height: 4.4em;
+    color: white;
+    position: fixed;
+    margin-top: 8.6em;
+    margin-left: 22.6em;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0.2em;
+    margin-right: 0.2em;
+    z-index: 50;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title-dialog{
+    z-index: 60;
+    font-size: 16px;
+    padding: 6px;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0;
+
+    /*border: 1px solid blue;*/
+}
+
+.yes-no-dialog{
+    z-index: 60;
+    font-size: 20px;
+    color: #FFC107;
+    float: left;
+    margin-top: 0.9em;
+    padding-bottom: 0.4em;
+    width: 47%;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+    /*border: 1px solid orange;*/
+}
+
+.yes-no-dialog:hover{
+    color: #FF6F00;
+}
+
+.dialog-profile-box{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 3em;
+    margin-right: 1em;
+    font-family: logo_font;
+    background-color: #424242;
+    width: 20em;
+    height: auto;
+    z-index: 50;
+}
+
+.profile-dialog{
+    font-size: 18px;
+    color: white;
+    margin: 1em;
+}

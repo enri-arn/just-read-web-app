@@ -1,0 +1,172 @@
+/* 
+    Created on : 10-gen-2018, 9.54.05
+    Author     : Arnaudo Enrico, Giraudo Paolo, Impeduglia Alessia
+*/
+
+.borrowing-box{
+    width: 25em;
+    height: 13.5em;
+    margin-top: 1em;
+    float: left;
+    margin-right: 0.5em;
+    overflow: hidden;
+    margin-bottom: 1em;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /*border: 2px solid green;*/
+}
+
+.borrowing-box:hover{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+.book-cover-container{
+    width: 34%;
+    height: 100%;
+    float: left;
+
+    /*border: 2px solid red;*/
+}
+
+.cover-book-borrowing{
+    width: 100%;
+    height: 100%;
+
+    /*border: 2px solid gold;*/
+}
+
+.cover-book-borrowing:hover{
+    opacity: 0.7;
+}
+
+.book-info{
+    width: 62%;
+    height: 98%;
+    float: left;
+
+    /*border: 2px solid violet;*/
+}
+
+.title-book-borrowing{
+    font-size: 18px;
+    width: 90%;
+    height: 3em;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /*border: 2px solid blue;*/
+}
+
+.author-book-borrowing{
+    font-size: 16px;
+    width: 90%;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    height: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.2em;
+
+    /*border: 2px solid blue;*/
+}
+
+.fab-box{
+    height: 5em;
+    width: 3em;
+    float: right;
+    margin-right: 0.1em;
+    margin-left: 1em;
+    margin-top: -32.6%;
+    
+    /*border: 2px solid red;*/
+}
+
+.fab-increase{
+    width: 2.8em;
+    height: 2.8em;
+    float: right;
+    background-color: #ffc107;
+    border-radius: 50%;
+    z-index: 30;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+
+    /*border: 2px solid green;*/
+}
+
+.fab-increase:hover{
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1.5px 5px 0 rgba(0, 0, 0, 0.1);
+    background-color: #F44336; 
+}
+
+.fab-increase-icon{
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    width: 1.8em;
+    height: 1.8em;
+    z-index: 40;
+}
+
+.fab-deliver{
+    width: 2.8em;
+    height: 2.8em;
+    margin-top: 0.4em;
+    float: right;
+    background-color: #ffc107;
+    border-radius: 50%;
+    z-index: 30;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+
+    /*border: 2px solid green;*/
+}
+
+.fab-deliver:hover{
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1.5px 5px 0 rgba(0, 0, 0, 0.1);
+    background-color: #F44336;
+}
+
+.fab-deliver-icon{
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    width: 1.8em;
+    height: 1.8em;
+    z-index: 40;
+}
+
+.progress-bar-container{
+    background-color: #f1f1f1;
+    width: 60%;
+    height: 6px;
+    margin-top: 3%;
+    margin-left: 0.5em;
+    
+    /*border: 2px solid aquamarine;*/
+}
+
+.current-progress{
+    background-color: #ff0000;
+    height: 6px;
+    
+    /*border: 1px solid green;*/
+}
+
+.start-end-date{
+    display: block;
+    width: 60%;
+    font-size: 10px;
+    margin-bottom: 0.4em;
+    margin-top: 22%;
+    margin-right: 0;
+    margin-left: 1.5em;
+    
+    /*border: 2px solid red;*/
+}

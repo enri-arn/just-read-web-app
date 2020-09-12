@@ -1,0 +1,628 @@
+/* 
+    Created on : 14-gen-2018, 14.56.14
+    Author     : Arnaudo Enrico, Giraudo Paolo, Impeduglia Alessia
+*/
+
+@font-face {
+    font-family: main_font;
+    src: url(../fonts/JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: roboto_font;
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: bold_font;
+    src: url(../fonts/Roboto-Regular.ttf);
+}   
+
+@font-face {
+    font-family: title_font;
+    src: url(../fonts/JosefinSans-Light.ttf);
+}
+
+
+.info-box{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+    width: 48.01%;
+    height: 28em;
+    margin-right: 2%;
+    margin-top: 20%;
+
+    /* border: 2px solid green; */
+}
+
+.plot-box{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    width: 48.01%;
+    height: 28em;
+    margin-left: 2%;
+    margin-top: 0;
+
+    /* border: 2px solid orange; */
+}
+
+.category-box  {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+    width: 48.01%;
+    height: 28em;
+    margin-right: 2%;
+    margin-top: 0;
+
+    /* border: 2px solid green; */
+}
+
+.review-box{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    width: 48.01%;
+    height: 28em;
+    margin-left: 2%;
+    margin-top: 0;
+
+    /* border: 2px solid cyan; */
+}
+
+.bookinfo-title{
+    font-family: title_font;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 0.7em;
+    margin-top: 0.5em;
+    margin-bottom: 5px;
+    font-size: 44px;
+
+    /* border: 2px solid gold; */
+}
+
+.bookinfo-author{
+    font-family: title_font;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 1em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    font-size: 28px;
+
+    /* border: 2px solid gold; */
+}
+
+.bookinfo-rating-box{
+    margin-left: 1em;
+    margin-top: 0.5em;
+    width: 90%;
+    height: 16em;
+
+    /* border: 2px solid blue; */
+}
+
+.bookinfo-rating{
+    padding-left: 5px;
+    height: 4em;
+    width: 10em;
+    float: left;
+
+    /*border: 2px solid green;*/
+}
+
+.rate-text{
+    font-family: roboto_font;
+    font-size: 46px;
+    float: left;
+    width: 1.2em;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0.4em;
+
+    /* border: 2px solid gold; */
+}
+
+.rating-star-infobox{
+    width: 0.8em;
+    height: 0.8em;
+    padding: 0;
+    margin-top: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    float: left;
+
+    /* border: 2px solid gold; */
+}
+
+.general-info-box{
+    width: 90%;
+    float: left;
+    margin-top: 0.8em;
+
+    /* border: 2px solid red; */
+}
+
+.number-voters{
+    font-size: 10px;
+    width: 1em;
+    float: right;
+    margin-top: 0.6em;
+    margin-right: 1.7em;
+    font-family: roboto_font;
+
+    /*border: 1px solid red;*/
+}
+
+.account-num-voters{
+    float: right;
+    width: 0.8em;
+    height: 0.8em;
+    margin-top: 0.6em;
+
+    /* border: 1px solid red; */
+}
+
+.rating-container{
+    width: 10em;
+    height: 4em;
+    float: left;
+
+    /*border: 2px solid red; */
+}
+
+.five-star-box{
+    margin-top: 0.5em;
+    background-color: #4CAF50;
+    height: 8px;
+}
+
+.four-star-box{
+    background-color: #8cc648;
+    height: 8px;
+}
+
+.three-star-box{
+    background-color: #ffff00;
+    height: 8px;
+}
+
+.two-star-box{
+    background-color: #FFC107;
+    height: 8px;
+}
+
+.one-star-box{
+    background-color: #FF6E40;
+    height: 8px;
+}
+
+.table-info-bookinfo{
+    font-size: 19px;
+    width: 90%;
+}
+
+.general-info-title{
+    font-family: main_font;
+}
+
+tr{
+    height: 2.6em;
+}
+
+th{
+    text-align: left;
+    padding: 2px;
+}
+
+td{
+    font-family: roboto_font;
+}
+
+.plot-title{
+    font-family: title_font;
+    font-size: 27px;
+    margin-left: 1em;
+    margin-bottom: 0.2em;
+    padding: 1px;
+}
+
+.plot-text{
+    height: 78%;
+    margin-left: 1.2em;
+    margin-right: 0.8em;
+    margin-bottom: 2em;
+    overflow-y:hidden;
+    text-overflow: ellipsis;
+    font-family: roboto_font;
+
+    /* border: 2px solid red; */
+}
+
+.plot-text:hover{
+    overflow-y:auto;
+}
+
+.category-tag-container{
+    cursor: pointer;
+    width: 5.8em;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    margin-top: 0.6em;
+    padding-top: -0.2em;
+    margin-bottom: 0.4em;
+    font-size: 20px;
+    display: block;
+    float: left;
+    border-radius: 30px;
+    background-color: #efefef;
+
+    /*border: 2px solid red;*/
+}
+
+.tag-image{
+    width: 1em;
+    height: 1em;
+    padding: 0.2em;
+    margin-top: 0.05em;
+    float: left;
+    border-radius: 50%;
+
+    /*border: 2px solid blue;*/
+}
+
+.title-category{
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 4px;
+    font-size: 16px;
+    font-family: roboto_font;
+    width: 4em;
+    height: 1em;
+    float: left;
+
+    /*border: 2px solid green;*/
+}
+
+.category-tag-container:after{
+    background-color: #dfdfdf;
+}
+
+#category-paragraph > .category-tag-container:hover{
+    background-color: #00e676;
+}
+
+.personal-review{
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 7em;
+    width: 90%;
+
+    /* border: 2px solid red; */
+}
+
+.rating-insert {
+    overflow: hidden;
+    display: inline-block;
+    width: 30%;
+    margin-left: 30%;
+    margin-right: 30%;
+
+    /*border: 2px solid red;*/
+}
+
+.rating-input {
+    float: right;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0 0 0 -16px;
+    opacity: 0;
+}
+
+.rating-star {
+    float: right;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../icons/star_black.png') 0 -24px;
+}
+
+.rating-star:hover,
+.rating-star:hover ~ .rating-star,
+.rating-input:checked ~ .rating-star {
+    background-position: 0 0;
+    background: url('../icons/star_hover.png') 0 -24px;
+}
+
+.input-personal-review{
+    width: 90%;
+    height: 34%;
+    resize: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-family: bold_font;
+    background-color: #eeeeee;
+    transition: 0.5s;
+    outline: none;
+
+    border: 1px solid #eeeeee;
+}
+
+.input-personal-review:hover{
+    border: 1px solid #444;
+}
+
+.input-personal-review:focus{
+    border: 1px solid #555;
+}
+
+.reviews-users{
+    margin-left: 1em;
+    margin-right: 1em;
+    overflow-y:hidden;
+    text-overflow: ellipsis;
+    height: 21em;
+
+    /* border: 2px solid cyan; */
+}
+
+.reviews-users:hover{
+    overflow-y:auto;
+}
+
+.title-review-insert{
+    font-size: 16px;
+    width: 95%;
+    margin-top: 0.2em;
+    margin-bottom: 2px;
+    text-align: center;
+
+    /* border: 1px solid violet; */
+}
+
+.reviews-title{
+    margin-bottom: 0;
+    padding: 0;
+    padding-top: 5px;
+
+    /* border: 2px solid blue; */
+}
+
+.personal-reviews-title{
+    width: 90%;
+    margin-top: 2.2em;
+    margin-bottom: 0;
+
+    /* border: 2px solid blue; */
+}
+
+.send-review-btn{
+    cursor: pointer;
+    border: none;
+    font-family: title_font;
+    font-size: 20px;
+    background-color: #ffc107;
+    color: white;
+    padding: 5px;
+    margin-top: 0.2em;
+    float: right;
+    margin-right: 1em;
+    z-index: 30;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.14);
+}
+
+.send-review-btn:hover{
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1.5px 5px 0 rgba(0, 0, 0, 0.1);
+    background-color: #F44336;
+}
+
+.reviews-users-box{
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    width: 98%;
+    float: left;
+
+    /*border: 2px solid red;*/
+}
+
+.profile-image{
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+    border-radius: 50%;
+    float: left;
+
+    /* border: 2px solid red; */
+}
+
+.box-review{
+    float: left;
+    width: 80%;
+    background-color: #efefef;
+    border-radius: 20px;
+    padding: 10px;
+
+    /* border: 2px solid red; */
+}
+
+.title-fab{
+    position: fixed;
+    right: 3.4em;
+    margin-top: 0.4em;
+    padding: 5px;
+    border-radius: 10px;;
+    font-size: 24px;
+    background-color: #454545;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3), 0 7px 22px 0 rgba(0, 0, 0, 0.21);
+    color: white;
+}
+
+.fab1{
+    visibility: hidden;
+}
+
+.fab2{
+    visibility: hidden;
+}
+
+.fab3{
+    visibility: hidden;
+}
+
+.fab-book-open{
+    width: 3.8em;
+    height: 3.8em;
+    background-color: #ffc107;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3), 0 7px 22px 0 rgba(0, 0, 0, 0.21);
+    cursor: pointer;
+    color: white;
+}
+
+.fab-send-open{
+    width: 3.8em;
+    height: 3.8em;
+    background-color: #ffc107;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 6em;
+    right: 1em;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3), 0 7px 22px 0 rgba(0, 0, 0, 0.21);
+    cursor: pointer; 
+    color: white;
+}
+
+.fab-fav-open{
+    width: 3.8em;
+    height: 3.8em;
+    background-color: #ffc107;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 11em;
+    right: 1em;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3), 0 7px 22px 0 rgba(0, 0, 0, 0.21);
+    cursor: pointer; 
+    color: white;
+}
+
+.fab-icon-open{
+    width: 1.8em;
+    height: 1.8em;
+    margin-top: 1em;
+    margin-left: 1em; 
+}
+
+.fab-book-open:hover .fab1{
+    visibility: visible;
+}
+
+.fab-book-open:hover{
+    background-color: #F44336;
+}
+
+.fab-fav-open:hover{
+    background-color: #03A9F4;
+}
+
+.fab-fav-open:hover .fab3{
+    visibility: visible;
+}
+
+.fab-send-open:hover{
+    background-color: #F44336;
+}
+
+.fab-send-open:hover .fab2{
+    visibility: visible;
+}
+
+
+@media only screen and (max-width: 1000px){
+    article{
+        width: 95%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .title-category{
+        font-size: 10px;
+    }
+
+    .rating-insert {
+        width: 26%;
+        margin-left: 29%;
+        margin-right: 29%;
+    }
+
+    .category-tag-container{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    article{
+        width: 95%;
+        margin-right: 5px;
+        margin-left: 5px;
+        background-size: contain;
+    }
+
+    .rating-insert {
+        width: 36%;
+        margin-left: 19%;
+        margin-right: 19%;
+    }
+
+    .title-category{
+        font-size: 16px;
+    }
+
+    .category-tag-container{
+        font-size: 16px;
+    }
+
+    .info-box{
+        margin-top: 60%;
+        float: left;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .plot-box{
+        float: left;
+        margin-top: 2%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .category-box  {
+        float: left;
+        margin-top: 2%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .review-box{
+        float: left;
+        margin-top: 2%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+

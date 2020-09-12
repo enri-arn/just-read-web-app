@@ -1,0 +1,16 @@
+/* 
+    Created on : 11-gen-2018, 21.35.22
+    Author     : Arnaudo Enrico, Giraudo Paolo, Impeduglia Alessia
+*/
+
+@font-face {
+    font-family: main_font;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+body{
+    font-family: main_font;
+    margin: 0;
+    background-color: #efefef;
+}
+

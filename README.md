@@ -1,1 +1,3 @@
-# just-read-web-app
+# JustRead web-app
+
+Java web application for library management
